@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="simple_application_which_can_open_web_links">Simple application which can open web links</string>
+    <string name="go_to_website">Go To Website</string>
+    <string name="name">Name</string>
+    <string name="get_contact">Get Contact</string>
+    <string name="dial_contact">Dial Contact</string>
 </resources>
