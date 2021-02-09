@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         dialContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startBrowserActivity();
+                startDialContactActivity();
             }
         });
 
@@ -39,19 +39,12 @@ public class MainActivity extends AppCompatActivity {
         getContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startBrowserActivity();
+                startGetContactActivity();
             }
         });
     }
 
-//    public void handleButtons(View button){
-//        switch (button.getId()) {
-//            case R.id.goWebsite: startBrowserActivity(); break;
-//            case R.id.dialContact: ; break;
-//            case R.id.getContact: ; break;
-//        }
-//    }
-
+    //Function used to create the intent that links MainActivity and BrowserActivity
     private void startBrowserActivity(){
         //1. Create explicit intent from this activity to BrowserActivity
         Intent intent = new Intent(MainActivity.this, BrowserActivity.class);
@@ -61,4 +54,22 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("URL", url);
         startActivity(intent);
     }
+
+    private void startDialContactActivity(){
+
+    }
+
+    private void startGetContactActivity(){
+
+    }
+
+
+    //    public void handleButtons(View button){
+    //        switch (button.getId()) {
+    //            case R.id.goWebsite: startBrowserActivity(); break;
+    //            case R.id.dialContact: ; break;
+    //            case R.id.getContact: ; break;
+    //        }
+    //    }
+
 }
